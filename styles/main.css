@@ -6,13 +6,14 @@
 
 body {
   font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 54%, 11%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: hsl(217, 54%, 11%);
-  color: hsl(0, 0%, 100%);
 }
 
 .card {
@@ -77,6 +78,7 @@ body {
 }
 .card__description {
   font-size: 1.125rem;
+  font-weight: 300;
   color: hsl(215, 51%, 70%);
   line-height: 1.5;
 }
