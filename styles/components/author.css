@@ -23,4 +23,9 @@
 
 .author__name {
   color: var(--color-white);
+  cursor: pointer;
+}
+
+.author__name:hover {
+  color: var(--color-primary);
 }
