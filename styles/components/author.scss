@@ -1,0 +1,33 @@
+@use "../base/variables" as *;
+
+.author {
+  border-top: 1px solid $color-line;
+  display: flex;
+  align-items: center;
+  gap: $space-m;
+  padding-top: $space-m;
+
+  &__avatar {
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid $color-white;
+  }
+
+  &__text {
+    font-size: $font-size-base;
+  }
+
+  &__label {
+    color: $color-accent;
+    margin-right: 0.25rem;
+  }
+
+  &__name {
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

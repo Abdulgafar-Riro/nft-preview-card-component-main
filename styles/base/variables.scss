@@ -1,0 +1,26 @@
+// Colors
+$color-primary: hsl(178, 100%, 50%);
+$color-accent: hsl(215, 51%, 70%);
+$color-bg-dark: hsl(217, 54%, 11%);
+$color-bg-card: hsl(216, 50%, 16%);
+$color-line: hsl(215, 32%, 27%);
+$color-white: hsl(0, 0%, 100%);
+
+// Typography
+$font-family: "Outfit", sans-serif;
+$font-size-base: 1.125rem;
+$font-size-header: 1.5rem;
+
+// Spacing
+$space-xs: 0.25rem;
+$space-s: 0.5rem;
+$space-m: 1rem;
+$space-l: 1.5rem;
+
+// Border radius
+$radius-s: 0.5rem;
+$radius-m: 0.75rem;
+
+// Breakpoints
+$bp-mobile: 23.4375rem;
+$bp-desktop: 90rem;

@@ -1,0 +1,97 @@
+@use "../base/variables" as *;
+
+.card {
+  background-color: $color-bg-card;
+  border-radius: $radius-m;
+  padding: $space-l;
+  width: 90%;
+  max-width: $bp-mobile;
+  display: flex;
+  flex-direction: column;
+  gap: $space-l;
+
+  &__image {
+    position: relative;
+    width: 100%;
+    border-radius: $radius-s;
+    overflow: hidden;
+    cursor: pointer;
+
+    &-content {
+      width: 100%;
+      border-radius: $radius-s;
+      transition: transform 0.3s ease;
+    }
+
+    &-overlay {
+      position: absolute;
+      inset: 0;
+      background-color: $color-primary;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.3s ease;
+    }
+
+    &-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover {
+      .card__image-overlay {
+        opacity: 0.5;
+      }
+
+      .card__image-icon {
+        opacity: 1;
+      }
+
+      .card__image-content {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $space-s;
+  }
+
+  &__title {
+    font-size: $font-size-header;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-base;
+    color: $color-accent;
+    line-height: 1.5;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $space-s;
+  }
+
+  &__price,
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: $space-s;
+  }
+
+  &__price p {
+    color: $color-primary;
+  }
+}
